@@ -11,10 +11,8 @@ setup(
     description="A client to exfiltrate data through HTTP messages",
     classifiers=[
         "Operating System :: OS Independent ",
-        "Programming Language :: Python :: 3 ",
-        "License :: OSI Approved :: MIT License "
+        "Programming Language :: Python :: 3 "
     ],
-    license="MIT",
     long_description=desc,
     long_description_content_type="text/markdown",
     package_dir={"": "src"},
